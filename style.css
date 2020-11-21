@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home{ 
+    background:#DCDCDC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*cabeçario */
+
+.index-banner{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(ImagemHome/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header{
+    background: rgb(0 0 0);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin-left: 23px;
+    display: block;
+    padding: 10px;
+}
+
+
+ul, li {
+    margin-left: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+
+a{
+    text-decoration: none;  
+    color:  white;
+}
+
+/*fim do cabeçario*/
+
+
+
+/*texto h1, h2*/
+
+.index-banner h1{
+    font-family: sans-serif ;
+    display: flex;
+    color: #FFFFFF;
+    font-size: 5vw;
+    padding: 40px;
+    height: 0px;
+    text-shadow: 2px 2px 8px #111;
+
+}
+
+.index-banner h2{
+    font-family: sans-serif ;   
+    padding: 40px;
+    color: #FFFFFF;
+    font-size: 3vw;
+    height: 0px;
+    text-shadow: 2px 2px 8px #111;
+
+}
+
+
+ h3{
+    color: #2E8B57;
+    font-size:3vw;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-family:  sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 3px #696969;
+}
+
+
+
+#main {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 20px;
+}
+
+#main .box {
+    max-width: 100%;
+    background-color: #FFFFFf;
+    border-top-right-radius: 25px;
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 5px #696969;
+}
+
+#main .box .content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main .box .content .img {
+    border-radius: 5px;
+    height: 10px;
+    width: 30px;
+}
+
+#main .box .content .title {
+    font-size: 0.9em;
+    margin: 9px 0 14px 0;
+}
+
+#main .box .content .desc {
+    font-size: 11px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#main .box footer {
+
+    height: 5px;
+    width: 100%;
+}
+
+/* DEFINIÇÃO CORES*/
+
+/*Integrados*/
+
+#main #roxo footer {
+    background-color: rgba(138 43 226);
+}
+
+#main #roxo .content .img{
+    background-color: BlueViolet;
+}
+
+#main #roxo .content .title {
+    color: BlueViolet;
+}
+
+#main #roxo .content .title a{
+    color: BlueViolet;
+    font-size: 20px;
+
+}
+
+/*Subsequentes*/
+
+#main #vermelho footer {
+    background-color: rgba(255 0 0);
+}
+
+#main #vermelho .content .img{
+    background-color: red;
+}
+
+#main #vermelho .content .title {
+    color: red;
+}
+
+#main #vermelho .content .title a{
+    color: red; 
+    font-size: 20px;
+}
+
+/*Superiores*/
+
+#main #verde footer {
+    background-color: rgba(34 139 34);
+}
+
+#main #verde .content .img{
+    background-color: ForestGreen;
+}
+
+#main #verde .content .title {
+    color: ForestGreen;
+}
+
+#main #verde .content .title a{
+    color: ForestGreen; 
+    font-size: 20px;
+}
+
+/*  FOOTER*/
+
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    justify-content: space-between;
+
+}
+
+.content-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-footer .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+} 
+
+.box h2{
+    font-size: 1.125rem;
+    font-weight:  600 ;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+.box .conteine{
+    margin: 20px 0 0 0;
+    
+}
+
+.left .conteine .social{
+    margin: 20px 0 0 0;
+
+}
+
+.left .conteine .social a{
+    padding: 0 2px;
+}
+
+.left .conteine .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .conteine .social a span:hover{
+    background: #f12020;
+}
+
+.center .conteine .phone{
+    margin: 20px 0 0;
+}
+
+.center .conteine .phone span{
+    color: white;
+}
+
+.center .conteine .Email span{
+    color: white;
+}
+
+.right .conteine .email .text{
+    color: #ffffff;
+
+}
+
+.right .conteine .msg .text{
+    color: white;
+}
