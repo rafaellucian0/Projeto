@@ -14,6 +14,7 @@ Projeto de PWEB
 * [Criação de uma tabela na página integrados.html](link)
 * [Criação de uma tabela na página subsequentes.html](link)
 * [Criação de uma tabela na página superiores.html](link)
-* [Adição de uma imagem de fundo e uma nova estilização nas páginas login.html e cadastro.html](link)
+* [Adição de uma imagem de fundo e uma nova estilização na página "Login"](https://github.com/rafaellucian0/Projeto/commit/adae937005374b9bb3c88ba4eceb780050eb04ef)
+* [Adição de uma imagem de fundo e uma nova estilização na página "Inscricao"](link)
 ---
 * [Link para o GitHub Pages](https://rafaellucian0.github.io/Projeto/)
