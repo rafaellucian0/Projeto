@@ -21,19 +21,25 @@ body{
     margin-left: 0px;
 }
 
-a:link{
-    text-decoration: none;
-}
-
 h1{
     color:  white;
     
 }
-h2{
+h2,h3{
     margin-left: 23px;
 }
 
-ol{
+p{
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ol,ul{
     margin-top: 17px;
     margin-right: 10px;
     margin-bottom: 30px;
@@ -45,21 +51,22 @@ footer{
     bottom: 0px;
     width: 100%;
     background: #111;
-    justify-content: space-between;
+
 }
 
 .content-footer{
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .content-footer .box{
+    font-size: 1.5vw;
     flex-basis: 50%;
-    padding: 0px 20px;
+    padding: 10px 20px;
 } 
 
 .box h2{
-    font-size: 1.125rem;
+    font-size: 2vw;
     font-weight:  600 ;
     text-transform: uppercase;
     color: white;
@@ -68,7 +75,16 @@ footer{
 
 .box .conteine{
     margin: 20px 0 0 0;
+    
+}
 
+.box .conteine ul{
+    color: #ffffff;
+   
+}
+
+.box .conteine ul li{
+    font-size: 1.5vw;
 }
 
 .left .conteine .social{
@@ -95,23 +111,32 @@ footer{
     background: #f12020;
 }
 
+.left footer{
+    height: 5px;
+    width: 60%;
+    background-color: #228B22;
+}
+
 .center .conteine .phone{
     margin: 20px 0 0;
 }
 
-.center .conteine .phone span{
+.center footer{
+    height: 5px;
+    width: 100%;
+    background-color: #228B22;
+}
+
+.right .conteine .phone span{
     color: white;
 }
 
-.center .conteine .Email span{
+.right .conteine .Email span{
     color: white;
 }
 
-.right .conteine .email .text{
-    color: #ffffff;
-
-}
-
-.right .conteine .msg .text{
-    color: white;
+.right footer{
+    height: 5px;
+    width: 60%;
+    background-color: #228B22;
 }
