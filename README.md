@@ -15,5 +15,6 @@ Projeto de PWEB
 * [Criação de tabelas, adição do novo rodapé e ajustes nas páginas "Integrados", "Subsequentes", "Superiores" e "Dúvida"](https://github.com/rafaellucian0/Projeto/commit/60e44e15f43c90c060e1ebfaa915d19e5eb7e5d6)
 * [Adição de uma imagem de fundo e uma nova estilização na página "Login"](https://github.com/rafaellucian0/Projeto/commit/adae937005374b9bb3c88ba4eceb780050eb04ef)
 * [Adição de uma imagem de fundo e uma nova estilização na página "Inscricao"](https://github.com/rafaellucian0/Projeto/commit/fdc5a57b93606347f99a0745c8294a5a8b020cd4)
+* [Adição das imagens necessárias para todas as páginas](https://github.com/rafaellucian0/Projeto/commit/fdc5a57b93606347f99a0745c8294a5a8b020cd4)
 ---
 * [Link para o GitHub Pages](https://rafaellucian0.github.io/Projeto/)
