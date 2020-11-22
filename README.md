@@ -9,7 +9,7 @@ Projeto de PWEB
 * Rafael Luciano Lima da Silva
 ---
 ## Alterações feitas desde a Entrega 3:
-* [Criação e formatação da página infraestrutura.html](link)
+* [Criação e formatação da página infraestrutura.html](https://github.com/rafaellucian0/Projeto/commit/a8b094ec5f763e9a67878dbd04246ebbd6e58214)
 * [Criação e formatação da página sobre.html](link)
 * [Criação de uma tabela na página integrados.html](link)
 * [Criação de uma tabela na página subsequentes.html](link)
