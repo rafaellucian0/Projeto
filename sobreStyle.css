@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+* {
+    margin-bottom: 0;
+}
+
+.header{
+    background: rgb(0, 116, 10);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    align-items: center;
+}
+
+body{
+    background-color:#ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+a{
+    color: white; margin-left: 0px;
+    text-decoration: none;
+}
+    
+h1{
+    color:  white;
+        
+}
+
+h2{
+    margin-top: 40px;
+    margin-left: 23px;
+}
+
+h3{
+    margin-top: 20px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-top: 20px;
+    margin-left: 23px;
+    margin-right: 23px;
+    margin-bottom: 20px;
+}
+
+/*  FOOTER*/
+
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    justify-content: space-between;
+
+}
+
+.content-footer{
+    display: flex;
+    
+}
+
+.content-footer .box{
+    font-size: 1.5vw;
+    flex-basis: 50%;
+    padding: 10px 20px;
+} 
+
+.box h2{
+    font-size: 2vw;
+    font-weight:  600 ;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+.box .conteine{
+    margin: 20px 0 0 0;
+    
+}
+
+.box .conteine ul{
+    color: #ffffff;
+   
+}
+
+.box .conteine ul li{
+    font-size: 1.5vw;
+}
+
+.left .conteine .social{
+    margin: 20px 0 0 0;
+
+}
+
+.left .conteine .social a{
+    padding: 0 2px;
+}
+
+.left .conteine .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .conteine .social a span:hover{
+    background: #f12020;
+}
+
+.left footer{
+    height: 5px;
+    width: 60%;
+    background-color: #228B22;
+}
+
+.center .conteine .phone{
+    margin: 20px 0 0;
+}
+
+.center footer{
+    height: 5px;
+    width: 100%;
+    background-color: #228B22;
+}
+
+.right .conteine .phone span{
+    color: white;
+}
+
+.right .conteine .Email span{
+    color: white;
+}
+
+.right footer{
+    height: 5px;
+    width: 60%;
+    background-color: #228B22;
+}
