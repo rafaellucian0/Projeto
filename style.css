@@ -215,16 +215,17 @@ footer{
 
 .content-footer{
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .content-footer .box{
+    font-size: 1.5vw;
     flex-basis: 50%;
     padding: 10px 20px;
 } 
 
 .box h2{
-    font-size: 1.125rem;
+    font-size: 2vw;
     font-weight:  600 ;
     text-transform: uppercase;
     color: white;
@@ -234,6 +235,15 @@ footer{
 .box .conteine{
     margin: 20px 0 0 0;
     
+}
+
+.box .conteine ul{
+    color: #ffffff;
+   
+}
+
+.box .conteine ul li{
+    font-size: 1.5vw;
 }
 
 .left .conteine .social{
@@ -260,23 +270,32 @@ footer{
     background: #f12020;
 }
 
+.left footer{
+    height: 5px;
+    width: 60%;
+    background-color: #228B22;
+}
+
 .center .conteine .phone{
     margin: 20px 0 0;
 }
 
-.center .conteine .phone span{
+.center footer{
+    height: 5px;
+    width: 100%;
+    background-color: #228B22;
+}
+
+.right .conteine .phone span{
     color: white;
 }
 
-.center .conteine .Email span{
+.right .conteine .Email span{
     color: white;
 }
 
-.right .conteine .email .text{
-    color: #ffffff;
-
-}
-
-.right .conteine .msg .text{
-    color: white;
+.right footer{
+    height: 5px;
+    width: 60%;
+    background-color: #228B22;
 }
