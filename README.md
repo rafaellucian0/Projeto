@@ -9,9 +9,11 @@ Projeto de PWEB
 * Rafael Luciano Lima da Silva
 ---
 ## Alterações feitas desde a Entrega 3:
-* [Criação e formatação da página campus.html](link)
+* [Criação e formatação da página infraestrutura.html](link)
 * [Criação e formatação da página sobre.html](link)
 * [Criação de uma tabela na página integrados.html](link)
 * [Criação de uma tabela na página subsequentes.html](link)
 * [Criação de uma tabela na página superiores.html](link)
-* [Adição de uma imagem de fundo nas páginas login.html e cadastro.html](link)
+* [Adição de uma imagem de fundo e uma nova estilização nas páginas login.html e cadastro.html](link)
+---
+* [Link para o GitHub Pages](https://rafaellucian0.github.io/Projeto/)
