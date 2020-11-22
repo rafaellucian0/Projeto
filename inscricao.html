@@ -1,59 +1,53 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-	<title>Inscrição</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./inscricaoStyle.css"> 
-	<link rel="shortcut icon" href="ImagemHome/favicon.ico" type="image/x-icon">
+<head lang="pt-br">
+    <meta name="viewport" content="width=device-width, initil-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./loginStyle.css"> 
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="shortcut icon" href="ImagemHome/favicon.ico" type="image/x-icon">
+    <title>Inscrição</title>
+
 </head>
+
 <body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form method="POST" action="" class="sign-in-form">
+                    <h2 class="title">IFAL</h2>
+                    <h3 class="titleTwo"> Inscreva-se</h3>
+                   
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Nome">
+                    </div>
+                   
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" size="30" maxlength="50">
+                    </div>
+                    
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Cpf (xxx.xxx.xxx-xx)" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                    </div>
 
-	<form class="from" action="">
-		<div class="card">
-			<div class="text">
-				<h1>Inscrição</h1>
-				
-			</div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </div>
 
-			<div class="grupo-card">
-				
-				<label>Nome</label>
-				<input type="text" name="Nome" placeholder="Digite seu Nome">
-			</div>
-
-			<div class="grupo-card">
-				
-				<label>Email</label>
-				<input type="text" name="Email" placeholder="Digite seu Email">
-			</div>
-
-			<div class="grupo-card">
-				
-				<label>CPF</label>
-				<input type="text" name="CPF" placeholder="Digite seu CPF">
-			</div>
-
-			<div class="grupo-card">
-				
-				<label>Senha</label>
-				<input type="password" name="senha" placeholder="Digite sua Senha">
-			</div>
-
-
-			<div class="grupo-card">
-				
-				<label>Confirme senha</label>
-				<input type="password" name="confirm senha" placeholder="Digite sua Senha">
-			</div>
-
-			<div class="grupo-card">
-				<button type="submit">Concluir</button>
-			</div>
-		</div>
-
-		
-	</form>
-
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirme a senha">
+                    </div>
+                    <input type="submit" value="Login" class="btn solid ">
+                </form>
+            </div>
+        </div>
+        <div class="panels-cantainer"></div>
+    </div>
 </body>
 </html>
