@@ -8,13 +8,8 @@ Projeto de PWEB
 * Marcus Vinicius Correia Alencar
 * Rafael Luciano Lima da Silva
 ---
-## Alterações feitas desde a Entrega 3:
-* [Criação e formatação da página infraestrutura.html](https://github.com/rafaellucian0/Projeto/commit/a8b094ec5f763e9a67878dbd04246ebbd6e58214)
-* [Criação e formatação da página sobre.html](https://github.com/rafaellucian0/Projeto/commit/42ff910ea956425d085406ce259c925177008e9f)
-* [Criação de um novo rodapé e adição dos links na página "Inicial" das páginas "Infraestrutura" e "Sobre"](https://github.com/rafaellucian0/Projeto/commit/43b1cc1d08ff4b1a9fd485f2c27a08d58220e3df)
-* [Criação de tabelas, adição do novo rodapé e ajustes nas páginas "Integrados", "Subsequentes", "Superiores" e "Dúvida"](https://github.com/rafaellucian0/Projeto/commit/60e44e15f43c90c060e1ebfaa915d19e5eb7e5d6)
-* [Adição de uma imagem de fundo e uma nova estilização na página "Login"](https://github.com/rafaellucian0/Projeto/commit/adae937005374b9bb3c88ba4eceb780050eb04ef)
-* [Adição de uma imagem de fundo e uma nova estilização na página "Inscricao"](https://github.com/rafaellucian0/Projeto/commit/fdc5a57b93606347f99a0745c8294a5a8b020cd4)
-* [Adição das imagens necessárias para todas as páginas](https://github.com/rafaellucian0/Projeto/commit/fdc5a57b93606347f99a0745c8294a5a8b020cd4)
+## Alterações feitas desde a Entrega 4:
+* [Adição de itens no formulário da página "Inscrição"](https://github.com/rafaellucian0/Projeto/commit/9df455d339a3ecc7106363a37023ab493e0f3fa7)
+* [Utilização de media queries para adaptação da página para os variados tipos de telas](https://github.com/rafaellucian0/Projeto/commit/0058427207eebfddc5cb56cc9125be60edee67f4)
 ---
 * [Link para o GitHub Pages](https://rafaellucian0.github.io/Projeto/)
