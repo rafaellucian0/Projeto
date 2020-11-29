@@ -34,6 +34,7 @@ p{
     margin-bottom: 20px;
 }
 
+
 a{
     text-decoration: none;
     color: white;
@@ -45,12 +46,64 @@ ol,ul{
     margin-bottom: 30px;
 }
 
+
+@media(max-width: 600px){
+
+    .content-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+    
+    }
+
+    .box .conteine{
+        display: flex;
+        flex-wrap: column;
+    }
+
+    
+    .content-footer .box{
+        font-size: 3.5vw;
+        flex-basis: 50%;
+        padding: 10px 20px;
+    } 
+
+    .box h2{
+        font-size: 3vw;
+        font-weight:  600 ;
+        text-transform: uppercase;
+        color: white;
+        margin-top: 0px;
+        
+    }
+
+    .box .conteine p{
+        margin-top: 0px;
+    }
+
+    .box .conteine ul{
+        color: #ffffff;
+        margin-bottom: 0px;
+        margin-top: 0px;
+       
+    }
+    
+    .box .conteine ul li{
+        font-size: 3.5vw;
+    }
+
+    .left .conteine .social{
+        margin-top: 0px;
+    
+    }
+}
 /*  FOOTER*/
 
 footer{
     bottom: 0px;
     width: 100%;
     background: #111;
+    justify-content: space-between;
 
 }
 
@@ -86,6 +139,47 @@ footer{
 .box .conteine ul li{
     font-size: 1.5vw;
 }
+
+
+
+@media(max-width: 600px){
+    
+    .content-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        
+    
+    }
+
+    .box .conteine{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .content-footer .box{
+        font-size: 2.5vw;
+        flex-basis: 50%;
+        padding: 10px 20px;
+    } 
+
+    .box h2{
+        font-size: 3vw;
+        font-weight:  600 ;
+        text-transform: uppercase;
+        color: white;
+        
+    }
+    
+    .box .conteine ul li{
+        font-size: 2.5vw;
+    }
+}
+
+
+
 
 .left .conteine .social{
     margin: 20px 0 0 0;
@@ -140,3 +234,4 @@ footer{
     width: 60%;
     background-color: #228B22;
 }
+

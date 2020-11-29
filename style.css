@@ -302,7 +302,7 @@ footer{
 
 
 
-@media(min-width: 400px) and (max-width: 600px){
+@media(max-width: 600px){
     
     .content-footer{
         display: flex;
