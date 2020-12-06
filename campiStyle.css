@@ -26,6 +26,11 @@ body{
     margin-left: 0px;
 }
 
+h1{
+    margin-top: 35px;
+    margin-left: 23px;
+}
+
 p{
     margin-bottom: 30px;
     margin-left: 23px;
@@ -146,6 +151,36 @@ footer{
     height: 5px;
     width: 60%;
     background-color: #228B22;
+}
+#menu-icon {
+    position: absolute;
+    top: 33px;
+    margin-right: 33px;
+    right: 0;
+    cursor: pointer;
+}
+
+.menu-amostra {
+    background: rgb(0, 116, 10) repeat scroll 0% 0%;
+    width: 185px;
+    height: 330px;
+    position: absolute;
+    top: 110px;
+    right: 100%;
+    transition: left 0.5s ease 0s;
+    overflow-x: hidden;
+}
+
+.menu-amostra li {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    list-style-type: none;
+}
+.menu-amostra ul {
+    position: absolute;
+    top: 31px;
 }
 
 @media(max-width: 600px){

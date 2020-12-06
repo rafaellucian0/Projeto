@@ -27,8 +27,8 @@ a{
 }
     
 h1{
-    color:  white;
-        
+    margin-top: 35px;
+    margin-left: 23px;   
 }
 
 h2{
@@ -139,6 +139,37 @@ footer{
 
 .box .conteine ul li{
     font-size: 1.5vw;
+}
+
+#menu-icon {
+    position: absolute;
+    top: 33px;
+    margin-right: 33px;
+    right: 0;
+    cursor: pointer;
+}
+
+.menu-amostra {
+    background: rgb(0, 116, 10) repeat scroll 0% 0%;
+    width: 185px;
+    height: 380px;
+    position: absolute;
+    top: 110px;
+    right: 100%;
+    transition: left 0.5s ease 0s;
+    overflow-x: hidden;
+}
+
+.menu-amostra li {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    list-style-type: none;
+}
+.menu-amostra ul {
+    position: absolute;
+    top: 31px;
 }
 
 @media(max-width: 600px){

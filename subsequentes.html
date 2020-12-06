@@ -10,12 +10,27 @@
         <title>Cursos Subsequentes</title>
     </head>
     <body>
-        <header class="header">
-            <a href="index.html">   
-                <img src="ImagemHome/logo1.png">
-            </a>
-            <h1>Cursos Subsequentes</h1>
+        <header class="index-banner">
+            <nav class="header">
+                <a href="index.html">   
+                    <img src="ImagemHome/logo1.png">
+                </a>
+                <div class="menu-icon" id="menu-icon">
+                    <img class="menu" src="ImagemHome/menu.png" alt="menu" width="65px">
+                </div>
+                <nav class="menu-amostra" id="menu-amostra">
+                    <ul>
+                        <li><a href="index.html" target="_blank">Página Inicial</a></li>
+                        <li><a href="login.html" target="_blank">Entrar</a></li>
+                        <li><a href="inscricao.html" target="_blank">Inscreva-se</a></li>
+                        <li><a href="duvida.html" target="_blank">Dúvidas</a></li>
+                        <li><a href="infraestrutura.html" target="_blank"> Infraestrutura</a></li>
+                        <li><a href="sobre.html" target="_blank"> Sobre </a></li>
+                    </ul>
+                  </nav>
+            </nav>
         </header>
+        <h1>Cursos Subsequentes</h1>
         <h2>Conhecendo o Ensino Subsequente</h2>
         <div class="texto">
             O curso técnico subsequente vai garantir ao estudante uma formação profissional e tecnológica escolhida. Depois de finalizado, o estudante já pode ingressar no mercado de trabalho e começar a exercer a profissão escolhida. Para ingressar nesse tipo de curso, o requisito é que o estudante tenha concluído o ensino médio até a data da matrícula na instituição, prevista para o início do ano do seguinte ao exame de seleção.
@@ -146,8 +161,6 @@
                     <div class="conteine">
                         <ul>
                             <li> Administração </li>
-                            <li> <a href="infraestrutura.html"> Infraestrutura </a></li>
-                            <li><a href="sobre.html" target="_blank"> Sobre </a></li>
                             <li>História</li>
                         </ul>
                     </div>
@@ -195,6 +208,18 @@
                 var graus = 360;
                 imga.style.transform = 'rotate(' + graus + 'deg)';
             }
+            
+            var veri = 1;
+            var icon = document.getElementById('menu-icon').addEventListener("click",function(){
+            var menu = document.getElementById('menu-amostra');
+            if (veri == 1) {
+                menu.style.right = "0";
+                veri = 0;
+            }else{
+            menu.style.right = "100%";
+            veri = 1;
+            }
+            })
         </script>
         
     </body>

@@ -12,12 +12,26 @@
         
     </head>
     <body>
-        <header class="header">
-            <a href="index.html">   
-                <img style="margin-left: 0px; margin-top: 0px;" src="ImagemHome/logo1.png">
-            </a>
-            <h1>Infraestrutura</h1>
+        <header class="index-banner">
+            <nav class="header">
+                <a href="index.html">   
+                    <img src="ImagemHome/logo1.png">
+                </a>
+                <div class="menu-icon" id="menu-icon">
+                    <img class="menu" src="ImagemHome/menu.png" alt="menu" width="65px">
+                </div>
+                <nav class="menu-amostra" id="menu-amostra">
+                    <ul>
+                        <li><a href="index.html" target="_blank">Página Inicial</a></li>
+                        <li><a href="login.html" target="_blank">Entrar</a></li>
+                        <li><a href="inscricao.html" target="_blank">Inscreva-se</a></li>
+                        <li><a href="duvida.html" target="_blank">Dúvidas</a></li>
+                        <li><a href="sobre.html" target="_blank"> Sobre </a></li>
+                    </ul>
+                  </nav>
+            </nav>
         </header>
+        <h1>Infraestrutura</h1>
         <h2 style="margin-top: 33px; margin-bottom: 30px; margin-left: 23px;">Conhecendo um pouco da infraestrutura do IFAL</h2>
         <p>O IFAL é composto pela Reitoria e cinco pró-reitorias (Ensino, Pesquisa, Extensão, Desenvolvimento Institucional e Administração e Planejamento). Possuímos mais de 1200 servidores e atendemos a mais de 10 mil alunos, de modo a contribuir para a formação profissional e inserção de jovens e adultos no mundo do trabalho, com credibilidade e qualidade de ensino. A Reitoria está instalada em Maceió. Possuímos 14 campi, confira as imagens de alguns logo abaixo:</p>
 
@@ -69,8 +83,6 @@
                     <div class="conteine">
                         <ul>
                             <li> Administração </li>
-                            <li> Infraestrutura </li>
-                            <li><a href="sobre.html" target="_blank"> Sobre </a></li>
                             <li> História </li>
                         </ul>
                     </div>
@@ -112,6 +124,18 @@
                 var graus = 360;
                 imga.style.transform = 'rotate(' + graus + 'deg)';
             }
+                
+            var veri = 1;
+            var icon = document.getElementById('menu-icon').addEventListener("click",function(){
+            var menu = document.getElementById('menu-amostra');
+            if (veri == 1) {
+                menu.style.right = "0";
+                veri = 0;
+            }else{
+            menu.style.right = "100%";
+            veri = 1;
+            }
+            })
         </script>        
 
     </body>

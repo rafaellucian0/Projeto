@@ -26,19 +26,8 @@
     flex-wrap: wrap;
     padding: 40px;
     align-items: center;
-    opacity: 0.5;
+    opacity: 0.7;
 }
-
-.menu{
-    display: flex;
-}
-
-.menu li {
-    margin-left: 23px;
-    display: block;
-    padding: 10px;
-}
-
 
 ul, li {
     margin-left: 0px;
@@ -300,7 +289,34 @@ footer{
     background-color: #228B22;
 }
 
+#menu-icon {
+    position: absolute;
+    top: 33px;
+    margin-right: 33px;
+    right: 0;
+    cursor: pointer;
+}
 
+.menu-amostra {
+    background: black repeat scroll 0% 0%;
+    width: 185px;
+    height: 330px;
+    position: absolute;
+    top: 130px;
+    right: 100%;
+    transition: left 0.5s ease 0s;
+}
+
+.menu-amostra li {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+.menu-amostra ul {
+    position: absolute;
+    top: 31px;
+}
 
 @media(max-width: 600px){
     
