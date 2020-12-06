@@ -14,48 +14,119 @@
 <body>
     <div class="container">
         <div class="forms-container">
-            <div class="signin-signup">
-                <form method="POST" action="" class="sign-in-form">
+            <div class="signin-signup" >
+                <form id="formulario" method="POST" action="" class="sign-in-form" name="form">
                     <h2 class="title">IFAL</h2>
                     <h3 class="titleTwo"> Inscreva-se</h3>
                    
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Nome" required = "required" id="nome" name="nome">
                     </div>
                    
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" size="30" maxlength="50">
+                        <input type="email" required="required" id="email" placeholder="Email" name="email">
                     </div>
                     
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Cpf (xxx.xxx.xxx-xx)" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                        <input type="text" required ="required" placeholder="Cpf (xxx.xxx.xxx-xx)" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
                     </div>
 
                      
                     <div class="input-field">
                         <i class="fas fa-phone"></i>
-                        <input type="tel" placeholder="(XX)XXXX-XXXX" pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{4}">
+                        <input type="tel" required="required" placeholder="Contato: (XX)XXXX-XXXX" id="contato" pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{4}">
                     </div>
 
                      
                     <div class="input-field">
                         <i class="fas fa-map-marker-alt"></i>
-                        <input type="text" placeholder="Endereço" maxlength="100">
+                        <input type="text" required="required" placeholder="Endereço" id = "indereco" >
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Senha">
+                        <input type="password" required="required" placeholder="Senha" id="senha" name="senha">
+                        <p id="avisoSenha"></p>
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Confirme a senha">
+                        <input type="password" required="required" placeholder="Confirme a senha" id="confirmarSenha" name="conf_senha">
                     </div>
-                    <input type="submit" value="Login" class="btn solid ">
+                    <script>
+                        form.addEventListener("submit", function validar(evt){
+                            evt.preventDefault();
+                            var counter=0;
+                            // Validar nome
+                            const nome = form.nome
+                            if (nome.value.length < 5) {
+                                alert('O nome precisa de pelo menos 5 caracteres')
+                                nome.focus()
+                                counter+=1;
+                            }
+
+                            // Validar email
+                            const email = form.email
+
+                            const user = email.value.substring(0, email.value.indexOf("@"))
+                            const domain = email.value.substring(email.value.indexOf("@") + 1, email.value.length)
+
+                            if(!((user.length >= 1) &&
+                                (domain.length >= 3) &&
+                                (user.search("@") == -1) &&
+                                (domain.search("@") == -1) &&
+                                (user.search(" ") == -1) &&
+                                (domain.search(" ") == -1) &&
+                                (domain.search('.') != -1) &&
+                                (domain.indexOf(".") >= 1) &&
+                                (domain.lastIndexOf(".") < domain.length - 1))
+                            ) {
+                                alert('Email inválido')
+                                email.focus()
+                                counter+=1;
+                            }
+
+                            // Validar contato
+                            const cont = form.contato
+                            if (cont.value.length < 10 || cont.value=="") {
+                                alert('O contato precisa de pelo menos 10 caracteres')
+                                cont.focus()
+                                counter+=1;
+                            }
+
+                            // Validar endereço
+                            const endereco = form.indereco
+                            if (endereco.value.length < 5 || endereco.value=="") {
+                                alert('O endereço precisa ser descrito em Rua, Bairro, Cidade')
+                                endereco.focus()
+                                counter+=1;
+                            }
+
+                            // Validar senhas
+                            const pass = form.senha
+                            const conf_pass = form.conf_senha
+                            
+                            if (pass.value.length < 8 || conf_pass.value.length < 8) {
+                                alert('A senha precisa de pelo menos 8 caracteres')
+                                counter+=1;
+                            }
+                            else if (pass.value != conf_pass.value) {
+                                alert('As senhas não coincidem')
+                                conf_pass.focus()
+                                counter+=1;
+                            }
+                            if(counter==0){
+                                document.form.submit();
+                            }
+                            else{
+                                validar();
+                            }
+                        })
+                        </script>
+                    <input class="btn btn-primary" type="submit">
                 </form>
             </div>
         </div>

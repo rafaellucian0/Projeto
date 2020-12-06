@@ -14,18 +14,57 @@
         <div class="container">
             <div class="forms-container">
                 <div class="signin-signup">
-                    <form action="" class="sign-in-form">
+                    <form method="POST" action="" class="sign-in-form" name="form">
                         <h2 class="title">IFAL</h2>
                         <h3 class="titleTwo"> Login</h3>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="email" placeholder="Email">
+                            <input type="email" required="required" placeholder="Email" id="email" name="email">
                         </div>
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="password">
+                            <input type="password" required="required" placeholder="Senha" id="senha" name="senha">
                         </div>
-                        <input type="submit" value="Login" class="btn solid ">
+                        <script>
+                        form.addEventListener("submit", function validar(evt){
+                            evt.preventDefault();
+                            // Validar email
+                            const email = form.email
+                            var counter = 0;
+                            const user = email.value.substring(0, email.value.indexOf("@"))
+                            const domain = email.value.substring(email.value.indexOf("@") + 1, email.value.length)
+
+                            if(!((user.length >= 1) &&
+                                (domain.length >= 3) &&
+                                (user.search("@") == -1) &&
+                                (domain.search("@") == -1) &&
+                                (user.search(" ") == -1) &&
+                                (domain.search(" ") == -1) &&
+                                (domain.search('.') != -1) &&
+                                (domain.indexOf(".") >= 1) &&
+                                (domain.lastIndexOf(".") < domain.length - 1))
+                            ) {
+                                alert('Email inválido')
+                                email.focus()
+                            }
+                            else{
+                                counter+=1;
+                            }
+                            // Validar senhas
+                            const pass = form.senha
+
+                            if (pass.value.length < 8) {
+                                alert('A senha precisa de pelo menos 8 caracteres')
+                            }
+                            if(pass.value.length>=8 && counter==1){
+                                document.form.submit();
+                            }
+                            else{
+                                validar();
+                            }
+                        })
+                        </script>
+                        <input type="submit" class="btn solid">
                     </form>
 
                 </div>
