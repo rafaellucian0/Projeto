@@ -75,16 +75,16 @@ table{
     width: 400px;
 }
 
+caption{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
 table th, table td{
     font-family:  sans-serif;
     padding:  10px;
     border: 1px solid;
     text-align: center;
-}
-
-caption{
-    font-size: 30px;
-    font-weight: bolder;
 }
 
 .hscroll{
